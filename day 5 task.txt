@@ -1,0 +1,30 @@
+// odd number
+function oddNum(num){
+return num.filter(n=>n%2);
+
+}
+console.log(oddNum([1,2,3]));
+
+// intial from lower case to uppercase
+function titleCase(str) {
+    return str.toLowerCase().replace(s => s.toUpperCase());
+  }
+  
+  console.log(titleCase('iron man'));
+  console.log(titleCase('iNcrEdible hulK'));
+
+// remove duplicates
+  let chars = ['A', 'B', 'A', 'C', 'B'];
+  let uniqueChars = [...new Set(chars)];
+  
+  console.log(uniqueChars);
+
+// sum of values in array
+function sum(num){
+    let sum=0;
+    for(let value of num){
+        sum=sum+value;
+    }
+    return sum;
+    }
+    console.log(sum([1,2,3]));
